@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +17,20 @@
     <!-- ================= NAVIGATION ================= -->
     <header class="site-header">
         <nav class="navbar">
-            <div class="logo">Nikky</div>
+            <a href="index.html" class="home-icon" aria-label="Home" title="Home">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="home-icon-svg">
+                    <path d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>
+            </a>
+
+
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -41,7 +53,9 @@
 
             <div class="hero-buttons">
                 <a href="projects.html" class="btn primary">View Projects</a>
-                <a href="https://github.com/NikkyMantis" class="btn secondary">GitHub</a>
+                <a href="https://github.com/NikkyMantis" class="btn secondary" target="_blank" rel="noopener">
+                    GitHub
+                </a>
             </div>
         </div>
     </section>
@@ -84,9 +98,7 @@
             <p>
                 Through my academic work and hands-on experience, I've built projects using
                 Java, Spring Boot, SQL, and JavaFX, and I've supported enterprise technology
-                as a Field Technology Captain Intern at The Home Depot. I’m especially drawn
-                to work that blends problem-solving, system-level thinking, and practical
-                impact.
+                as a Field Technology Captain Intern at The Home Depot.
             </p>
 
             <p>
@@ -103,7 +115,7 @@
 
         <div class="project-card">
             <div class="project-image">
-                <img src="images/mtg-tracker-sample.png" alt="MTG Tracker App screenshot">
+                <img src="assets/images/mtg-tracker-sample.png" alt="MTG Tracker App screenshot">
             </div>
 
             <div class="project-info">
@@ -113,9 +125,10 @@
                     A Magic: The Gathering collection tracker with search, filtering,
                     and persistent storage.
                 </p>
+
                 <div class="project-links">
-                    <a href="#">GitHub</a>
-                    <a href="#">Details</a>
+                    <a href="#" class="btn secondary">GitHub</a>
+                    <a href="#" class="btn secondary">Details</a>
                 </div>
             </div>
         </div>
