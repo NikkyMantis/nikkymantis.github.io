@@ -11,11 +11,15 @@ html {
     scroll-behavior: smooth;
 }
 
+/* =====================
+   BASE TYPOGRAPHY
+===================== */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background-color: #0f1115;
     color: #eaeaf0;
-    line-height: 1.6;
+    line-height: 1.65;
+    font-size: 16.5px;
 }
 
 /* =====================
@@ -105,38 +109,34 @@ a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 3.1rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
 }
 
 .hero h2 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     color: #b0b4c0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+    font-weight: 500;
 }
 
 .hero p {
     margin-bottom: 2rem;
 }
 
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 /* =====================
    SECTIONS (GENERAL)
 ===================== */
 section {
-    padding: 4rem 1rem;
+    padding: 4.75rem 1rem;
 }
 
 section h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+    font-size: 2.1rem;
+    margin-bottom: 2.75rem;
+    letter-spacing: -0.015em;
 }
 
 /* =====================
@@ -161,16 +161,12 @@ section h2 {
 }
 
 /* =====================
-   ABOUT SECTION
+   ABOUT
 ===================== */
 .about {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-.about h2 {
-    margin-bottom: 2.5rem;
 }
 
 .about-content {
@@ -188,13 +184,47 @@ section h2 {
 }
 
 /* =====================
-   PROJECTS
+   PROJECTS (HOME + PAGE)
 ===================== */
 .projects {
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* Projects page title */
+.projects h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3.5rem;
+    letter-spacing: -0.02em;
+}
+
+/* General project text */
+.projects p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Individual project blocks (projects.html) */
+.project-summary {
+    margin-bottom: 4rem;
+}
+
+.project-summary h2 {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+}
+
+.project-meta {
+    color: #009e24;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Featured project card (index.html) */
 .project-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,7 +240,7 @@ section h2 {
 }
 
 .project-tech {
-    color: #b0b4c0;
+    color: #009e24;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
@@ -230,7 +260,7 @@ section h2 {
 
 .experience-item {
     max-width: 800px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 2.75rem;
 }
 
 .experience-item h3 {
@@ -255,14 +285,79 @@ section h2 {
 }
 
 .contact p {
-    margin-bottom: 1.5rem;
+    max-width: 720px;
+    margin: 0 auto 1.75rem;
+    font-size: 1.05rem;
+}
+
+/* =====================
+   RESUME PAGE
+===================== */
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.resume h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    letter-spacing: -0.02em;
+}
+
+.resume h2 {
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+}
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.resume-section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #d0d3e0;
+}
+
+.resume-intro {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+    color: #b0b4c0;
+}
+
+.resume-section ul {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resume-section li {
+    line-height: 1.6;
+}
+
+.resume-download {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #b0b4c0;
 }
 
 /* =====================
    FOOTER
 ===================== */
 .site-footer {
-    padding: 1.5rem;
+    padding: 1.75rem;
     text-align: center;
     font-size: 0.85rem;
     color: #8b8f9c;
@@ -274,7 +369,7 @@ section h2 {
 ===================== */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.25rem;
+        font-size: 2.35rem;
     }
 
     .project-card {
