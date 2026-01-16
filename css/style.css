@@ -311,6 +311,12 @@ section h2 {
     margin: 0 auto 1.75rem;
     font-size: 1.05rem;
 }
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
 /* =====================
    RESUME PAGE
