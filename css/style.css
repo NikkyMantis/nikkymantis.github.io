@@ -408,3 +408,57 @@ section h2 {
         gap: 1rem;
     }
 }
+
+/* Ouroboros-inspired portfolio refinement */
+:root {
+    --surface: #101b2b;
+    --edge: #263b50;
+    --cyan: #71d7e7;
+    --green: #80ddb2;
+    --text-soft: #b7c7d5;
+}
+body { background: #091321; color: #ecf4fb; }
+a { color: var(--cyan); }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+.site-header { background: rgba(9, 19, 33, .96); border-color: var(--edge); backdrop-filter: blur(12px); }
+.nav-links a { color: #d5e6ef; }
+.nav-links a:hover { color: var(--cyan); }
+.home-icon { color: var(--green); }
+.btn { border-radius: 8px; }
+.btn.primary { background: var(--cyan); color: #071321; }
+.btn.primary:hover { background: #9ae6ee; }
+.btn.secondary { border-color: var(--edge); color: #e2eff6; }
+.btn.secondary:hover { background: #172c40; }
+.hero { padding: 7rem 1rem; background: radial-gradient(circle at 75% 30%, #16394b 0%, #0c1c2d 35%, #091321 75%); }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.12; }
+.hero h2, .hero p, .about-content p, .resume-section p { color: var(--text-soft); }
+.tech-stack, .experience { background: #0e1b2b; }
+.stack-grid > div, .experience-item, .project-summary, .resume-section { background: var(--surface); border: 1px solid var(--edge); border-radius: 12px; padding: 1.5rem; }
+.stack-grid h3, .project-meta, .project-tech { color: var(--green); }
+.project-summary { margin-bottom: 1.5rem; scroll-margin-top: 6rem; }
+.project-summary h2 { text-align: left; margin: 0 0 .75rem; }
+.projects p { max-width: none; }
+.project-note { color: var(--text-soft); font-size: .9rem !important; margin-top: 1rem !important; }
+.eyebrow { font-size: .78rem !important; letter-spacing: .13em; font-weight: 700; color: var(--cyan); margin-bottom: .8rem !important; }
+.ouroboros-feature { background: linear-gradient(135deg, #112f42, #111b30 62%, #201c3b); border-block: 1px solid var(--edge); }
+.feature-inner { max-width: 850px; margin: auto; }
+.ouroboros-feature h2 { text-align: left; margin-bottom: 1rem; }
+.ouroboros-feature p { max-width: 680px; color: #cedce8; margin-bottom: 1.25rem; }
+.ouroboros-feature .feature-meta { color: var(--green); font-size: .95rem; }
+.ouroboros-feature .btn { margin-top: .5rem; }
+.resume-content { gap: 1.75rem; }
+.resume-section { gap: .75rem; }
+.resume-download { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.site-footer { border-color: var(--edge); }
+@media (max-width: 768px) {
+    .navbar { flex-wrap: wrap; gap: .65rem; justify-content: center; }
+    .nav-links { justify-content: center; flex-wrap: wrap; gap: .5rem 1rem; font-size: .9rem; }
+    .hero { padding: 4.5rem 1rem; }
+    section { padding: 3.5rem 1rem; }
+    .about { padding: 3.5rem 1rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Give the About section room before the featured Ouroboros panel. */
+.about { padding-top: 4.75rem; padding-bottom: 5.5rem; }
+@media (max-width: 768px) { .about { padding-top: 3.5rem; padding-bottom: 4.5rem; } }
